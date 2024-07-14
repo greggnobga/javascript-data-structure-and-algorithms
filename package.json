@@ -1,0 +1,12 @@
+{
+  "name": "alpha",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Test environment for vanilla javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
