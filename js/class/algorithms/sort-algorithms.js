@@ -79,6 +79,7 @@ export default class SortAlgorithms {
     return this.merge(this.mergeSort(left), this.mergeSort(right), desc);
   }
 
+  /** Merge left and right array. */
   merge(left, right, desc) {
     /** Declare pointer. */
     let result = [];

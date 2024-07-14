@@ -25,7 +25,7 @@ export default class SearchAlgorithms {
     let rightIndex = arr.length - 1;
 
     while (leftIndex <= rightIndex) {
-      /** Get the middleIndex and use math floor to round the result. */
+      /** Get the middle index and use ternary to mixed and match. */
       let modulus = leftIndex + (rightIndex - leftIndex / 2);
       let middleIndex = modulus % 2 === 0 ? Math.ceil(modulus) : Math.floor(modulus);
 
@@ -34,7 +34,7 @@ export default class SearchAlgorithms {
         return { index: middleIndex, target: target };
       }
 
-      /** Cut the half of the array. */
+      /** Cut half of the array. */
       if (target < sort[middleIndex]) {
         rightIndex = middleIndex - 1;
       } else {
@@ -45,7 +45,7 @@ export default class SearchAlgorithms {
     return { index: -1, target: target };
   }
 
-  /** Recursive binary search not working. O(logn) */
+  /** Recursive binary search. O(logn) */
   recursiveBinarySearch(arr, target, left = 0, right = arr.length - 1) {
     if (left > right) {
       return -1;

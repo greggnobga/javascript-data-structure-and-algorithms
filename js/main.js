@@ -1,7 +1,13 @@
-import MathAlgorithms from './class/math-algorithms.js';
-import SearchAlgorithms from './class/search-algorithms.js';
-import SortAlgorithms from './class/sort-algorithms.js';
-import MiscellaneousProblems from './class/miscellaneous-problems.js';
+import MathAlgorithms from './class/algorithms/math-algorithms.js';
+import SearchAlgorithms from './class/algorithms/search-algorithms.js';
+import SortAlgorithms from './class/algorithms/sort-algorithms.js';
+import MiscellaneousProblems from './class/algorithms/miscellaneous-problems.js';
+import ArrayStructure from './class/data-structures/arrays.js';
+import ObjectStructure from './class/data-structures/objects.js';
+import SetStructure from './class/data-structures/sets.js';
+import MapStructure from './class/data-structures/maps.js';
+import StackStructure from './class/data-structures/stacks.js';
+import QueueStructure from './class/data-structures/queues.js';
 
 // /** Arrays, Object and Loops */
 // const fruits = ['Banana', 'Ananas', 'Jackfruit', 'Melon'];
@@ -132,7 +138,62 @@ import MiscellaneousProblems from './class/miscellaneous-problems.js';
 // console.log('Quick Sort ', sortInstance.quickSort([-3, 7, 9, 23, 21, 18, 25, 0], false));
 // console.log('Merge Sort ', sortInstance.mergeSort([5, 2, 9, 1, 5, 6], false));
 
-/** Misc Problems. */
-const miscInstance = new MiscellaneousProblems();
+// /** Misc Problems. */
+// const miscInstance = new MiscellaneousProblems();
 
-console.log('Cartesan Product ', miscInstance.cartesanProduct([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
+// console.log('Cartesan Product ', miscInstance.cartesanProduct([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
+
+// console.log('Climbing Staircase ', miscInstance.climbingStaircase(1));
+// console.log('Climbing Staircase ', miscInstance.climbingStaircase(3));
+// console.log('Climbing Staircase ', miscInstance.climbingStaircase(5));
+
+// console.log('Tower of Hanoi ', miscInstance.towerOfHanoi(3, 'A', 'C', 'B'));
+
+// /** Array. */
+// const arrayInstance = new ArrayStructure();
+// console.log('Array Basic ', arrayInstance.arrayBasic());
+
+/** Object. */
+// const objectInstance = new ObjectStructure();
+// console.log('Object Basic ', objectInstance.objectBasic());
+
+// /** Set. */
+// const setInstance = new SetStructure();
+// console.log('Set Basic ', setInstance.setBasic());
+
+// /** Set. */
+// const mapInstance = new MapStructure();
+// console.log('Map Basic ', mapInstance.mapBasic());
+
+// /** Stack. */
+// const stackInstance = new StackStructure();
+
+// console.log('Stack Empty', stackInstance.isEmpty());
+
+// console.log('Stack Push', stackInstance.push(100));
+// console.log('Stack Push', stackInstance.push(200));
+// console.log('Stack Push', stackInstance.push(300));
+
+// console.log('Stack Pop', stackInstance.pop());
+
+// console.log('Stack Print', stackInstance.print());
+// console.log('Stack Peek', stackInstance.peek());
+// console.log('Stack Size', stackInstance.size());
+
+// console.log('Stack Clear', stackInstance.clear());
+// console.log('Stack Empty', stackInstance.isEmpty());
+
+/** Queue. */
+const queueInstance = new QueueStructure();
+console.log('Queue Empty ', queueInstance.isEmpty());
+
+queueInstance.enqueue(10);
+queueInstance.enqueue(20);
+queueInstance.enqueue(30);
+
+console.log('Queue Size ', queueInstance.size());
+console.log('Queue Print ', queueInstance.print());
+
+queueInstance.dequeue(10);
+console.log(queueInstance.peek());
+console.log('Queue Print ', queueInstance.print());

@@ -2,7 +2,7 @@
  * Big-O Notations - Worst Case compexity.
  * Omega Notations - Best Case compexity.
  * Theta Notations - Average Case compexity.
- * worst case possible scenario. Express on algebraic terms, count the how many the code runs plus the input size.
+ * Worst case possible scenario. Express on algebraic terms, count how many the code runs plus the input size.
  * 1 loop = O(n) - Linear
  * 2 nested loop = O(n^2) - Quadratic
  * 3 input reduce by half = O(logn) - Logarithm
