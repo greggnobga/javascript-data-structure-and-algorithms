@@ -1,5 +1,4 @@
 /** Circular Queue Structure. LIFO */
-
 export default class CircularQueueStructure {
   /** Constructor. */
   constructor(capacity) {

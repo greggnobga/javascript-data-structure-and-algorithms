@@ -1,5 +1,4 @@
 /** Queue Structure. LIFO */
-
 export default class QueueStructure {
   /** Constructor. */
   constructor() {

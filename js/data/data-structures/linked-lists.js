@@ -1,11 +1,11 @@
-/** Circular Queue Structure. LIFO */
+/** Node. */
 export class Node {
   constructor(value) {
     this.value = value;
     this.next = null;
   }
 }
-
+/** Linked List Structure. LIFO */
 export default class LinkListStructure {
   /** Constructor. */
   constructor() {
@@ -14,17 +14,7 @@ export default class LinkListStructure {
     this.size = 0;
   }
 
-  /** Check if is empty. */
-  isEmpty() {
-    return this.size === 0 ? true : false;
-  }
-
-  /** Get size. */
-  getSize() {
-    return this.size;
-  }
-
-  /** Append - at the end of the list. */
+  /** Prepend - at the start of the list. */
   prepend(value) {
     const node = new Node(value);
     /** Check if empty. */
@@ -160,6 +150,16 @@ export default class LinkListStructure {
 
     /** Return something. */
     return true;
+  }
+
+  /** Check if is empty. */
+  isEmpty() {
+    return this.size === 0 ? true : false;
+  }
+
+  /** Get size. */
+  getSize() {
+    return this.size;
   }
 
   /** Print. */

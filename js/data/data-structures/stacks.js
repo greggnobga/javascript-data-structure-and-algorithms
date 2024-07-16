@@ -1,5 +1,4 @@
 /** Stack Structure. FIFO*/
-
 export default class StackStructure {
   /** Constructor. */
   constructor() {
