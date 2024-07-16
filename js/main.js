@@ -1,21 +1,18 @@
-console.log('Welcome');
+import Pattern from './advanced/pattern.js';
 
-function fetchData() {
-  return new Promise((resolve) => {
-    fetch('url', {
-      method: 'POST',
-      body: JSON.stringify({ id: '200' }),
-    });
-    setTimeout(() => {
-      resolve('resolved');
-    }, 2000);
-  });
-}
+const pattern = new Pattern();
 
-async function loginRequest() {
-  console.log('calling');
-  const result = await fetchData();
-  console.log(result);
-}
-
-loginRequest();
+pattern.triangleRight();
+pattern.triangleRightHollow();
+pattern.triangleRightDownward();
+pattern.triangleRightDownwardHollow();
+pattern.square();
+pattern.squareHollow();
+pattern.hill();
+pattern.hillHollow();
+pattern.arrow();
+pattern.parallel();
+pattern.plus();
+pattern.cross();
+pattern.diamond();
+pattern.diamondHollow();

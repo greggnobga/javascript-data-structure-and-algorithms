@@ -9,3 +9,22 @@
 .list-type li {
   padding: 0.5rem;
 }
+
+.pattern {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner > .label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
